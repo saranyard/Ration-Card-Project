@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Details</title>
+    <link rel="stylesheet" href="addressdetails.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo" onclick="home()">
+            <img src="image/sym.png" alt="no img">G-E-P <span style="font-size:15px;">ORTAL</span>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button onclick="login()" class="btn">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="numberflex">
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="number">4</div>
+    </div>
+
+
+
+
+    <div class="form-container">
+        <h2 class="form-title">Address Details</h2>
+        <form>
+            <div class="form-group"> <label for="district">District</label>
+                <div class="select-wrapper"> <select id="district" name="district">
+                        <option value="" disabled selected>Select District</option>
+                        <option value="district1">Thoothukudi</option>
+                        <option value="district2" disabled>Tirunelveli</option>
+                        <option value="district3" disabled>Madurai</option>
+                        <option value="district4" disabled>Karur</option>
+                        <option value="district5" disabled>Virudhunagar</option>
+
+
+                    </select> </div>
+            </div>
+            <div class="form-group"> <label for="taluk">Taluk</label>
+                <div class="select-wrapper"> <select id="taluk" name="taluk">
+                        <option value="" disabled selected>Select Taluk</option>
+                        <option value="taluk1">Ettayapuram</option>
+                        <option value="taluk2" disabled>Vilathikulam</option>
+                        <option value="taluk3" disabled>Kovipatti</option>
+
+                    </select> </div>
+            </div>
+            <div class="form-group"> <label for="village">Village/City</label>
+                <div class="select-wrapper"> <select id="village" name="village">
+                        <option value="" disabled selected>Select Village/City</option>
+                        <option value="village1">Masarpatti</option>
+                        <option value="village2" disabled>Melakaranthai</option>
+                        <option value="village3" disabled>kelakaranthai</option>
+
+                    </select> </div>
+            </div>
+            <div class="form-group"> <label for="address">Full Address</label> <textarea id="address" name="address"
+                    rows="4"></textarea> </div>
+            <div class="form-group"> <label for="pincode">Pincode</label> <input type="text" id="pincode" name="pincode"
+                    placeholder="Enter Pincode"> </div>
+            <div class="button-group"> <button type="button" class="btn btn-prev"
+                    onclick="applicantdetails()">Previous</button> <button type="button"
+                    class="btn btn-next" onclick="familydetails()">Next</button> </div>
+        </form>
+    </div>
+
+
+
+
+
+
+    <footer class="foot">
+        <nav class="footer">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Accessibility</p>
+        </nav>
+        <p class="footp">&copy 2024 Ration Card Services. All rights reserved.</p>
+    </footer>
+    <script src="ration.js" defer></script>
+</body>
+
+</html>

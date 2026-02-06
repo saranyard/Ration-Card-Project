@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo" onclick="home()">
+            <img src="image/sym.png" alt="no img">G-E-P <span style="font-size:15px;">ORTAL</span>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button onclick="login()" class="btn">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- ===== PROFILE ===== -->
+    <section class="profile">
+
+        <h1>Your Profile</h1>
+
+        <div class="field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Priya Sharma">
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com">
+        </div>
+
+        <div class="field">
+            <label>Phone Number</label>
+            <input type="text" placeholder="9368587452">
+        </div>
+
+        <div class="field">
+            <label>Aadhaar Number</label>
+            <input type="text" placeholder="6363 6965 5623">
+        </div>
+
+        <button class="update-btn" onclick="changeColor(this)">Update Profile</button>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="foot">
+        <nav class="footer">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Accessibility</p>
+        </nav>
+        <p class="footp">&copy 2024 Ration Card Services. All rights reserved.</p>
+    </footer>
+    <script src="ration.js" defer></script>
+</body>
+
+</html>

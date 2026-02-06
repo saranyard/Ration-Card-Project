@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo" onclick="home()">
+            <img src="image/sym.png" alt="no img">G-E-P <span style="font-size:15px;">ORTAL</span>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" style="text-decoration: underline;">Contact</a></li>
+                <li><button onclick="login()" class="btn">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <div class="help-wrapper">
+
+        <h1>Help & Contact</h1>
+        <p class="subtitle">
+            Find answers to common questions or get in touch with our support team.
+        </p>
+
+        <!-- FAQ -->
+        <h4 class="section-title">Frequently Asked Questions</h4>
+
+        <div class="faq-box">
+            <details>
+                <summary>How do I apply for a ration card?</summary>
+                <p>You can apply online through the Ration Card Portal.</p>
+            </details>
+
+            <details>
+                <summary>What documents are required for application?</summary>
+                <p>Identity proof, address proof, and income certificate are required.</p>
+            </details>
+
+            <details>
+                <summary>How can I track my application status?</summary>
+                <p>Use your application number to track the status on the portal.</p>
+            </details>
+        </div>
+
+        <!-- CONTACT -->
+        <h4 class="section-title">Contact Information</h4>
+
+        <div class="contact-box">
+
+            <div class="contact-row">
+                <div class="left">
+                    <div class="icon">📞</div>
+                    <div>
+                        <strong>Helpline Number</strong>
+                        <p>Available Monday to Friday, 9 AM to 6 PM</p>
+                    </div>
+                </div>
+                <div class="right">+91-123-456-7890</div>
+            </div>
+
+            <div class="contact-row">
+                <div class="left">
+                    <div class="icon">✉️</div>
+                    <div>
+                        <strong>Email Support</strong>
+                        <p>Response within 2 business days</p>
+                    </div>
+                </div>
+                <div class="right">support@rationcard.gov.in</div>
+            </div>
+
+            <div class="contact-row">
+                <div class="left">
+                    <div class="icon">📍</div>
+                    <div>
+                        <strong>Office Address</strong>
+                        <p>Visit during office hours</p>
+                    </div>
+                </div>
+                <div class="right address">
+                    Ration Card Department, Government Building, New Delhi, India
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="foot">
+        <nav class="footer">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Accessibility</p>
+        </nav>
+        <p class="footp">&copy 2024 Ration Card Services. All rights reserved.</p>
+    </footer>
+    <script src="ration.js" defer></script>
+</body>
+
+</html>

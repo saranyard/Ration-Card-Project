@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.numberflex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 80px;
+    position: relative;
+    gap: 200px;
+
+}
+
+.numberflex::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 6px;
+    background-color: white;
+    /* transform: translateY(-50%); */
+    z-index: 0;
+
+}
+
+
+
+.numberflex::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 6px;
+    background-color: #373C7D;
+    /* transform: translateY(-50%); */
+    z-index: 0;
+
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: white;
+    width: 80px;
+    background-color: #373C7D;
+    border-radius: 50%;
+    font-size: 22px;
+    z-index: 1;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+.container {
+    width: 80%;
+    margin: auto;
+    margin: 80px auto;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.section-title {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* DOCUMENT CARD */
+.doc-card {
+    background: #F7FAFC;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doc-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    background: #E8EDF2;
+    border-radius: 8px;
+}
+
+.doc-title {
+    font-weight: 600;
+}
+
+.doc-desc {
+    font-size: 14px;
+    color: #4D7399;
+}
+
+.upload-btn {
+    background: #E8EDF2;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.btn-prev {
+    background-color: #E8EDF2;
+    color: #0D141C;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-next {
+    background-color: #373C7D;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+/* ===============================
+   RESPONSIVE MEDIA QUERIES
+   =============================== */
+
+/* ---------- Large Devices (Desktops 1200px and above) ---------- */
+@media (max-width: 1200px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .numberflex {
+        gap: 120px;
+        margin: 60px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+        font-size: 18px;
+    }
+}
+
+
+/* ---------- Medium Devices (Tablets & Small Laptops 992px) ---------- */
+@media (max-width: 992px) {
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .numberflex {
+        gap: 80px;
+        margin: 50px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .doc-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+/* ---------- Small Devices (Tablets & Large Phones 768px) ---------- */
+@media (max-width: 768px) {
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .numberflex {
+        flex-wrap: wrap;
+        gap: 40px;
+        margin: 40px 20px;
+    }
+
+    .numberflex::before,
+    .numberflex::after {
+        display: none;
+    }
+
+    .doc-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+
+/* ---------- Extra Small Devices (Mobile Phones 576px) ---------- */
+@media (max-width: 576px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .number {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .doc-title {
+        font-size: 15px;
+    }
+
+    .doc-desc {
+        font-size: 13px;
+    }
+
+    .upload-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-prev,
+    .btn-next {
+        width: 100%;
+    }
+}
+
+
+/* ---------- Very Small Devices (Small Mobiles 400px) ---------- */
+@media (max-width: 400px) {
+
+    .number {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar ul {
+        font-size: 16px;
+    }
+}

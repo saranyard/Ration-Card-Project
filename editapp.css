@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* MAIN CONTAINER */
+.title {
+    margin: 100px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* EACH FIELD */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* LABEL */
+.field label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0D141C;
+}
+
+/* VALUE BOX */
+.value {
+    background: white;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    opacity: 0.6;
+}
+
+.resubmit {
+    margin: 30px auto;
+    /* width: 30%; */
+    float: right;
+    display: block;
+    margin-right: 10px;
+    padding: 10px 30px;
+    color: white;
+    background-color: #373C7D;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* ------------------- */
+/* RESPONSIVE DESIGN   */
+/* ------------------- */
+
+/* Large Screens (1200px and below) */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .title {
+        margin: 80px 40px;
+    }
+}
+
+/* Laptop (992px and below) */
+@media (max-width: 992px) {
+
+    .navbar ul {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .title {
+        margin: 60px 30px;
+    }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .title {
+        margin: 40px 20px;
+        text-align: center;
+    }
+
+    .field label {
+        font-size: 18px;
+    }
+
+    .value {
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .resubmit {
+        float: none;
+        margin: 20px auto;
+    }
+}
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .title {
+        margin: 30px 15px;
+        font-size: 22px;
+    }
+
+    .container {
+        margin: 30px 15px;
+    }
+
+    .field label {
+        font-size: 16px;
+    }
+
+    .value {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .foot {
+        padding: 20px;
+    }
+}
+
+/* Extra Small Mobile (400px and below) */
+@media (max-width: 400px) {
+
+    .navbar ul {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .value {
+        font-size: 14px;
+    }
+}

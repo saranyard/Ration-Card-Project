@@ -1,0 +1,335 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+/* TITLE */
+
+.title {
+    margin: 40px 70px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* CARD */
+
+.card {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 30px;
+}
+
+.card img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.details h4 {
+    color: #4D7399;
+    font-size: 14px;
+}
+
+.details h3 {
+    font-size: 18px;
+}
+
+.details p {
+    color: #373C7D;
+}
+
+.status {
+    background: #E8EDF2;
+    padding: 8px 15px;
+    border-radius: 8px;
+    width: fit-content;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+
+/* BUTTONS */
+
+.btn-group {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.primary {
+    background: #373C7D;
+    color: white;
+
+}
+
+.secondary {
+    background: #E8EDF2;
+    color: black;
+    box-shadow: 1px 1px 3px black;
+
+}
+
+
+
+
+
+.down {
+    display: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================= */
+/* ✅ RESPONSIVE MEDIA QUERIES */
+/* ================================= */
+
+
+/* ---------- Large Desktop (1400px+) ---------- */
+@media (min-width:1400px) {
+    .card {
+        width: 75%;
+    }
+}
+
+
+/* ---------- Laptop / Small Desktop ---------- */
+@media (max-width:1200px) {
+
+    .card img {
+        width: 320px;
+        height: 220px;
+    }
+
+    .title {
+        margin: 40px;
+    }
+}
+
+
+/* ---------- Tablet ---------- */
+@media (max-width:992px) {
+
+    .navbar ul {
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .details {
+        align-items: center;
+    }
+
+    .title {
+        margin: 30px;
+        text-align: center;
+    }
+
+    .down {
+        width: 60%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+
+/* ---------- Mobile Large ---------- */
+@media (max-width:768px) {
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+
+    .title {
+        font-size: 26px;
+        margin: 20px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .down {
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+
+/* ---------- Small Mobile ---------- */
+@media (max-width:480px) {
+
+    .title {
+        font-size: 22px;
+    }
+
+    .details h3 {
+        font-size: 16px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .status {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 15px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .down {
+        width: 90%;
+        font-size: 16px;
+    }
+}

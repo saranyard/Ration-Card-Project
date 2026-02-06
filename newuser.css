@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* FORM SECTION */
+
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow:0 4px 10px rgba(0,0,0,0.2); */
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #CFDBE8;
+    background: #F7FAFC;
+}
+
+
+/* MOBILE OTP ROW */
+
+.mobile-row {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.otp-btn {
+    background: #E8EDF2;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin-top: 30px;
+    float: right;
+    font-weight: bold;
+}
+
+
+/* REGISTER BUTTON */
+
+.register-btn {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    background: #373C7D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-top:20px; */
+    cursor: pointer;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #4D7399;
+}
+
+.login-text a {
+    text-decoration: none;
+    color: #373C7D;
+    font-weight: bold;
+}
+
+.otp {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.otp p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= LARGE DESKTOP (Default Above 1200px) ================= */
+/* Your existing CSS works here */
+
+
+
+
+/* ================= LAPTOP (1024px – 1199px) ================= */
+
+@media (max-width:1199px) {
+
+    .container {
+        max-width: 750px;
+    }
+
+    .container h1 {
+        font-size: 26px;
+    }
+
+    .register-btn {
+        width: 60%;
+    }
+
+}
+
+
+
+
+/* ================= TABLET (768px – 1023px) ================= */
+
+@media (max-width:1023px) {
+
+    .head {
+        padding: 15px 25px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    .container {
+        max-width: 650px;
+        margin: 60px auto;
+    }
+
+    .register-btn {
+        width: 70%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
+
+
+
+
+/* ================= MOBILE (481px – 767px) ================= */
+
+@media (max-width:767px) {
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .mobile-row {
+        flex-direction: column;
+    }
+
+    .otp-btn {
+        width: 100%;
+        margin-top: 15px;
+        float: none;
+    }
+
+    .register-btn {
+        width: 80%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+
+
+
+/* ================= SMALL MOBILE (Up to 480px) ================= */
+
+@media (max-width:480px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .register-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .login-text {
+        font-size: 14px;
+    }
+
+    .otp {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .otp p {
+        font-size: 16px;
+    }
+
+    .foot {
+        padding: 20px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,554 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.numberflex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 80px;
+    position: relative;
+    gap: 200px;
+
+}
+
+.numberflex::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 6px;
+    background-color: white;
+    /* transform: translateY(-50%); */
+    z-index: 0;
+
+}
+
+
+
+.numberflex::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 60%;
+    height: 6px;
+    background-color: #373C7D;
+    /* transform: translateY(-50%); */
+    z-index: 0;
+
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: white;
+    width: 80px;
+    background-color: #373C7D;
+    border-radius: 50%;
+    font-size: 22px;
+    z-index: 1;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================
+   Main Form Content
+   ======================== */
+.form-wrapper {
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.text-header {
+    margin-bottom: 40px;
+}
+
+.text-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.text-header p {
+    font-size: 18px;
+    color: #4D7399;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #0D141C;
+}
+
+.mt-large {
+    margin-top: 50px;
+}
+
+/* Form Styles */
+.form-row {
+    margin-bottom: 24px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: #F7FAFC;
+    border: 1px solid #CFDBE8;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #0D141C;
+    outline: none;
+    appearance: none;
+    /* Removes default browser styles */
+}
+
+input::placeholder,
+select:invalid {
+    color: #4D7399;
+}
+
+input:focus,
+select:focus {
+    border-color: #373C7D;
+}
+
+/* Custom dropdown arrow */
+.select-arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    pointer-events: none;
+    border-left: 2px solid #4D7399;
+    border-bottom: 2px solid #4D7399;
+    transform: translateY(-70%) rotate(-45deg);
+}
+
+.action-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-add {
+    background-color: #373C7D;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+/* Table Styles */
+.table-container {
+    background-color: #F7FAFC;
+    border: 1px solid #CFDBE8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.table-header,
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    /* 3 columns */
+    padding: 20px;
+    align-items: center;
+}
+
+.table-header {
+    background-color: #F7FAFC;
+    font-weight: 600;
+    border-bottom: 1px solid #E6E8EB;
+}
+
+.table-row {
+    background-color: #fff;
+    border-bottom: 1px solid #E6E8EB;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.col {
+    font-size: 16px;
+    color: #0D141C;
+}
+
+.text-secondary {
+    color: #4D7399;
+}
+
+/* Bottom Navigation */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.btn-prev {
+    background-color: #E8EDF2;
+    color: #0D141C;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-next {
+    background-color: #373C7D;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE MEDIA QUERIES – ALL DEVICES
+   ===================================== */
+
+
+/* ===== Large Laptop / Small Desktop (1200px) ===== */
+@media (max-width:1200px) {
+
+    .form-wrapper {
+        padding: 0 30px;
+    }
+
+    .numberflex {
+        gap: 120px;
+        margin: 60px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+}
+
+
+
+/* ===== Laptop / Tablet Landscape (992px) ===== */
+@media (max-width:992px) {
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .numberflex {
+        gap: 80px;
+        margin: 50px 30px;
+    }
+
+    .form-wrapper {
+        margin: 40px 20px;
+    }
+
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 15px;
+    }
+
+}
+
+
+
+/* ===== Tablet Portrait (768px) ===== */
+@media (max-width:768px) {
+
+    /* Navbar */
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Step Progress */
+    .numberflex {
+        flex-wrap: wrap;
+        gap: 40px;
+        margin: 40px 20px;
+    }
+
+    .numberflex::before,
+    .numberflex::after {
+        display: none;
+    }
+
+    .number {
+        height: 70px;
+        width: 70px;
+        font-size: 20px;
+    }
+
+    /* Form */
+    .text-header h1 {
+        font-size: 26px;
+    }
+
+    .text-header p {
+        font-size: 16px;
+    }
+
+    input,
+    select {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    /* Table becomes stacked */
+    .table-header {
+        display: none;
+    }
+
+    .table-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .col {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-prev,
+    .btn-next {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+}
+
+
+
+/* ===== Large Mobile (576px) ===== */
+@media (max-width:576px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .number {
+        height: 60px;
+        width: 60px;
+        font-size: 18px;
+    }
+
+    .text-header h1 {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    input,
+    select {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .btn-add {
+        width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+
+
+/* ===== Small Mobile (400px) ===== */
+@media (max-width:400px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar ul {
+        font-size: 16px;
+    }
+
+    .number {
+        height: 50px;
+        width: 50px;
+        font-size: 16px;
+    }
+
+    .text-header h1 {
+        font-size: 20px;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+    }
+
+    .btn-prev,
+    .btn-next {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+}

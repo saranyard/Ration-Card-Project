@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+    height: 500px;
+    margin: 15px;
+    border-radius: 10px;
+    background: url("image/Depth\ 6\,\ Frame\ 8.jpg") center/cover no-repeat;
+}
+
+.content {
+    transform: translate(50px, 230px);
+    line-height: 50px;
+    text-align: center;
+    color: white;
+
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+.btngroup {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.btngroup button {
+    padding: 13px 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btngroup button:nth-child(1) {
+    background-color: #373C7D;
+    color: white;
+}
+
+.btngroup button:nth-child(2) {
+    background-color: #E8EDF2;
+    color: #373C7D;
+}
+
+
+
+
+
+.content123 {
+    margin: 30px;
+
+}
+
+.content123 h1 {
+    margin-bottom: 30px;
+}
+
+.content123 p {
+    line-height: 40px;
+    font-size: 20px;
+    color: #373C7D;
+}
+
+.btn123 {
+    background-color: #373C7D;
+    color: white;
+    padding: 13px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= */
+/* 📱 MOBILE (0 - 600px) */
+/* ========================= */
+@media (max-width: 600px) {
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .hero {
+        height: 400px;
+        margin: 10px;
+    }
+
+    .content {
+        transform: translate(0, 150px);
+        line-height: 35px;
+        padding: 0 15px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .btngroup {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content123 p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* ========================= */
+/* 📲 TABLET (601px - 900px) */
+/* ========================= */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .navbar ul {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .hero {
+        height: 450px;
+    }
+
+    .content {
+        transform: translate(30px, 200px);
+        line-height: 40px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .btngroup {
+        gap: 30px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+/* ========================= */
+/* 💻 LAPTOP (901px - 1200px) */
+/* ========================= */
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .content {
+        transform: translate(40px, 220px);
+    }
+
+    .btngroup {
+        gap: 40px;
+    }
+}
+
+/* ========================= */
+/* 🖥 LARGE SCREENS (1201px+) */
+/* ========================= */
+@media (min-width: 1201px) {
+
+    .hero {
+        height: 600px;
+    }
+
+    .content h1 {
+        font-size: 55px;
+    }
+}

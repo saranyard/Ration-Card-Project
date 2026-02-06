@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background: #F7FAFC;
+    border-bottom: 1px solid #E6E8EB;
+}
+
+.logo {
+    font-size: 20px;
+    font-family: "IM FELL French Canon SC";
+}
+
+.nav-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #0D141C;
+}
+
+.login-btn {
+    padding: 8px 20px;
+    background: #373C7D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------------- CONTENT ---------------- */
+
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 25px 0 10px;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.column {
+    /* flex: 1; */
+    padding: 15px 25px;
+    border-top: 1px solid #E6E8EB;
+}
+
+.label {
+    font-size: 14px;
+    color: #4D7399;
+}
+
+.value {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #0D141C;
+}
+
+.but {
+    background-color: #373C7D;
+    display: block;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== LARGE DESKTOP (1400px and above) ===================== */
+@media (min-width: 1400px) {
+    .container {
+        width: 75%;
+    }
+}
+
+
+/* ===================== LAPTOP / SMALL DESKTOP (1024px - 1399px) ===================== */
+@media (max-width: 1399px) {
+
+    .container {
+        width: 85%;
+    }
+
+    .navbar {
+        padding: 12px 25px;
+    }
+
+    .navbar ul {
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+}
+
+
+/* ===================== TABLET (768px - 1023px) ===================== */
+@media (max-width: 1023px) {
+
+    /* Navbar */
+    .head {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Content */
+    .container {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        border-top: none;
+        border-bottom: 1px solid #E6E8EB;
+    }
+
+    .but {
+        width: 50%;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+
+/* ===================== MOBILE LARGE (481px - 767px) ===================== */
+@media (max-width: 767px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        font-size: 16px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .label,
+    .value {
+        font-size: 13px;
+    }
+
+    .but {
+        width: 70%;
+        font-size: 16px;
+    }
+}
+
+
+/* ===================== SMALL MOBILE (320px - 480px) ===================== */
+@media (max-width: 480px) {
+
+    .head {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .column {
+        padding: 12px 15px;
+    }
+
+    .but {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .foot {
+        padding: 20px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+}

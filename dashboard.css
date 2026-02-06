@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.title {
+    margin: 50px;
+}
+
+
+
+.card {
+    display: flex;
+    margin-bottom: 60px;
+    background-color: white;
+    margin: 50px 50px;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.left {
+    line-height: 30px;
+}
+
+.left p {
+    color: #373C7D;
+}
+
+
+.apply {
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.579);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= LAPTOP (1024px – 1199px) ================= */
+@media (max-width:1199px) {
+
+    .title {
+        margin: 40px;
+    }
+
+    .card {
+        margin: 40px;
+    }
+
+}
+
+
+
+
+
+/* ================= TABLET (768px – 1023px) ================= */
+@media (max-width:1023px) {
+
+    .head {
+        padding: 15px 25px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    /* Card layout becomes slightly stacked */
+    .card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+/* ================= MOBILE (481px – 767px) ================= */
+@media (max-width:767px) {
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .title {
+        margin: 30px 20px;
+        font-size: 22px;
+    }
+
+    .card {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+
+    .left {
+        line-height: 26px;
+    }
+
+    .apply {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+
+
+
+
+/* ================= SMALL MOBILE (Up to 480px) ================= */
+@media (max-width:480px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    .title {
+        margin: 20px 15px;
+        font-size: 20px;
+    }
+
+    .card {
+        margin: 20px 15px;
+        padding: 15px;
+    }
+
+    .left {
+        line-height: 24px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    .apply {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .foot {
+        padding: 20px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+}

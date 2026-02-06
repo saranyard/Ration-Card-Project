@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 15px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373C7D;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #373C7D;
+}
+
+.btn {
+    background-color: #373C7D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* PAGE CONTENT */
+
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+/* Title */
+
+.page-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Success Message */
+
+.success {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.success h2 {
+    font-size: 28px;
+}
+
+.success p {
+    margin-top: 10px;
+}
+
+
+/* CARD */
+
+.card {
+    /* background:white; */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.details {
+    width: 60%;
+}
+
+.details h3 {
+    margin-bottom: 15px;
+}
+
+.details p {
+    line-height: 30px;
+    color: #4F6E96;
+}
+
+.image-box {
+    /* width:35%; */
+    /* height:220px; */
+    border-radius: 8px;
+    /* display:flex;
+    align-items:center;
+    justify-content:center; */
+}
+
+.image-box img {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+}
+
+/* NEXT STEPS */
+
+.next-steps {
+    margin-top: 30px;
+}
+
+.next-steps h3 {
+    margin-bottom: 15px;
+}
+
+.step {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #D1D9E8;
+    border-radius: 4px;
+}
+
+
+/* INFO TEXT */
+
+.info {
+    margin-top: 20px;
+    color: #4F6E96;
+}
+
+
+/* BUTTONS */
+
+.button-group {
+    display: flex;
+    gap: 200px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+.primary {
+    background: #373C7D;
+    color: white;
+}
+
+.secondary {
+    background: #4D7399;
+    color: white;
+}
+
+.light {
+    background: #E8EDF2;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot {
+    background-color: #373C7D;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+
+/* ---------- Large Devices (Desktops 1200px and below) ---------- */
+@media (max-width:1200px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .card-row {
+        gap: 40px;
+    }
+
+    .image-box img {
+        width: 450px;
+        height: 280px;
+    }
+
+    .button-group {
+        gap: 120px;
+    }
+}
+
+
+/* ---------- Laptops & Small Desktops (992px and below) ---------- */
+@media (max-width:992px) {
+
+    .navbar ul {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .card-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .image-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .button-group {
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+
+/* ---------- Tablets (768px and below) ---------- */
+@media (max-width:768px) {
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .success h2 {
+        font-size: 24px;
+    }
+
+    .step {
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+
+/* ---------- Large Mobile Phones (576px and below) ---------- */
+@media (max-width:576px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .page-title {
+        font-size: 22px;
+    }
+
+    .success h2 {
+        font-size: 20px;
+    }
+
+    .details p {
+        line-height: 26px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ---------- Small Mobile Phones (400px and below) ---------- */
+@media (max-width:400px) {
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .success h2 {
+        font-size: 18px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .step {
+        font-size: 14px;
+    }
+}

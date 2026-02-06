@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Details Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aaa.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>G-E-Portal</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <button class="btn-login">Login</button>
+            </nav>
+            <div class="mobile-menu-icon">☰</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="step completed">1</div>
+            <div class="line completed"></div>
+            <div class="step completed">2</div>
+            <div class="line completed"></div>
+            <div class="step active">3</div>
+            <div class="line"></div>
+            <div class="step">4</div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-wrapper">
+            <div class="text-header">
+                <h1>Family Details</h1>
+                <p>Please provide details of all family members to be included in the ration card.</p>
+            </div>
+
+            <!-- Add Member Section -->
+            <div class="section-title">Add Family Member</div>
+            
+            <form class="member-form">
+                <div class="form-row">
+                    <div class="input-group full-width">
+                        <select>
+                            <option value="" disabled selected>Select Relationship</option>
+                            <option>Spouse</option>
+                            <option>Child</option>
+                            <option>Parent</option>
+                        </select>
+                        <div class="select-arrow"></div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="text" placeholder="Age">
+                    </div>
+                    <!-- Spacer for layout balance if needed, or wrap inputs -->
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group full-width">
+                        <input type="text" placeholder="Aadhaar Number">
+                    </div>
+                </div>
+
+                <div class="action-row">
+                    <button type="button" class="btn-add">Add Member</button>
+                </div>
+            </form>
+
+            <!-- Family List Table -->
+            <div class="section-title mt-large">Family Members</div>
+            
+            <div class="table-container">
+                <div class="table-header">
+                    <div class="col">Relationship</div>
+                    <div class="col">Age</div>
+                    <div class="col">Aadhaar Number</div>
+                </div>
+                <!-- Row 1 -->
+                <div class="table-row">
+                    <div class="col text-secondary">Spouse</div>
+                    <div class="col text-secondary">32</div>
+                    <div class="col text-secondary">XXXX-XXXX-1234</div>
+                </div>
+                <!-- Row 2 -->
+                <div class="table-row">
+                    <div class="col text-secondary">Child</div>
+                    <div class="col text-secondary">10</div>
+                    <div class="col text-secondary">XXXX-XXXX-5678</div>
+                </div>
+                <!-- Row 3 -->
+                <div class="table-row">
+                    <div class="col text-secondary">Child</div>
+                    <div class="col text-secondary">5</div>
+                    <div class="col text-secondary">XXXX-XXXX-9012</div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <button class="btn-prev">Previous</button>
+                <button class="btn-next">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Accessibility</a>
+        </div>
+        <div class="copyright">
+            © 2024 Ration Card Services. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
